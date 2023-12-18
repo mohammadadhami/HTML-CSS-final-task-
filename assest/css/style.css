@@ -1,0 +1,952 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--white-97, #F7F7F8);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    color: black;
+}
+
+/* header */
+
+header {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.log-ul {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.log-ul ul {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.header-logo {
+    width: 54px;
+    height: 54px;
+}
+
+.auth {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.auth a {
+    padding: 14px 34px;
+}
+
+.auth a:last-of-type {
+    background-color: #FF9500;
+    border-radius: 10px;
+    color: #F7F7F8;
+}
+
+header .row svg {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    /* For mobile phones... */
+    header .row nav {
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        width: 100%;
+        display: none;
+    }
+
+    header .row svg {
+        display: flex;
+    }
+    .auth a{
+       font-size: 14px;
+       padding: 8px 18px;
+    }
+    .header-logo img{
+        width: 40px;
+    }
+}
+
+
+/* end-header */
+/* landing page */
+.landing-page {
+    padding: 50px 0px;
+
+}
+
+.landing-page .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.landing-page-dis {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.landing-page-dis h2 {
+    font-size: 38px;
+}
+
+.unlock {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFCFD;
+    padding: 30px;
+}
+
+.unlock h1 {
+    font-size: 48px;
+    background-color: #FCFCFD;
+}
+
+.unlock h1 span {
+    color: #FF9500;
+    background-color: #FFF;
+}
+
+.unlock img {
+    width: 35px;
+    height: 35px;
+}
+
+.landing-page-but {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.landing-page-but a {
+    padding: 18px 24px;
+    border-radius: 8px;
+}
+
+.landing-page-but a:first-of-type {
+    background-color: #FF9500;
+    color: #F7F7F8;
+}
+
+.landing-page-but a:last-of-type {
+    background-color: #FFF;
+}
+@media (max-width: 600px) {
+
+    /* For mobile phones... */
+    .unlock h1 {
+        font-size: 16px;
+    }
+
+    header .row nav {
+        flex-direction: column;
+        text-align: center;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        width: 100%;
+        display: none;
+    }
+
+    header .row svg {
+        display: flex;
+    }
+    .landing-page-dis h2{
+        font-size: 24px;
+        text-align: center;
+    }
+    .landing-page-dis p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .landing-page-but a{
+        font-size: 14px;
+        padding: 14px 20px;
+
+    }
+}
+/* end-landing-page */
+/* customers */
+.customers .container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    background-color: #FFF;
+    padding: 20px;
+    justify-content: space-around;
+    overflow-x: auto;
+}
+
+.container-img {
+    width: 100%;
+}
+
+.container-img img {
+    width: 100%;
+}
+
+.benefits .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.benefits-dis {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 40px) / 2);
+    gap: 10px;
+}
+
+.benefits-dis p {
+    color: var(--grey-35, #59595A);
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.benefits-but {
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    justify-content: end;
+    align-items: last baseline;
+}
+
+.benefits-but a {
+    border-radius: 8px;
+    border: 1px solid var(#F1F1F3);
+    background: var(#FCFCFD);
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.benefits .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefits .cards .card {
+    width: calc((100% - 40px) / 3);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #FFF;
+    padding: 40px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+.benefits .cards .card span {
+    align-self: flex-end;
+    font-size: 60px;
+    font-weight: 700;
+    background-color: #FFF;
+
+}
+
+.benefits .cards .card .card-text {
+    flex-grow: 1;
+    background-color: #FCFCFD;
+}
+
+.benefits .cards .card .card-text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -0.12px;
+    text-transform: capitalize;
+    background-color: #FFF;
+
+}
+
+.benefits .cards .card .card-text p {
+    height: 55px;
+    color: #4C4C4D;
+    line-height: 150%;
+    background-color: #FFF;
+}
+
+.benefits .cards .card .card-text p::first-letter {
+    text-transform: capitalize;
+}
+
+.benefits .cards .card a {
+    padding: 14px;
+    border-radius: 6px;
+    width: fit-content;
+    align-self: flex-end;
+    transition: all 0.5s;
+    background-color: #FFF;
+}
+@media (max-width: 600px) {
+    .benefits .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .benefits-dis {
+        width: 100%;
+    }
+    .benefits-dis h2{
+        font-size: 28px;
+    }
+    .benefits-dis p{
+        font-size: 14px;
+    }
+    .benefits-but a {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+    .container .cards .card{
+        width: 100%;
+    }
+
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    .container .cards .card{
+        width: calc((100% - 40px) / 2);
+    }
+}
+
+.our-courses {
+    display: flex;
+    padding: 30px 0px;
+    flex-wrap: wrap;
+}
+
+.our-courses .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.our-courses .container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses-dis {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 40px) / 2);
+    gap: 10px;
+    line-height: 150%;
+
+}
+
+.courses-dis p {
+    color: var(#59595A);
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.courses-but {
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    justify-content: end;
+    align-items: last baseline;
+}
+
+.courses-but a {
+    border-radius: 8px;
+    border: 1px solid var(#F1F1F3);
+    background: var(#FCFCFD);
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #FFF;
+    width: calc((100% - 30px) / 2);
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid var(--white-95, #F1F1F3);
+    background: var(--absolute-white, #FFF);
+
+
+}
+
+.course img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.course * {
+    background-color: #FFF;
+}
+
+.course-about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.course-about span {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid #F1F1F3;
+    background: #FFF;
+    color: #4C4C4D;
+
+}
+.course-about .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.course-about span:last-of-type {
+    color: #262626;
+    border-radius: 0%;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: flex-end;
+}
+
+.course a {
+    align-items: center;
+    color: #262626;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #F7F7F8;
+}
+
+.course-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+@media (max-width: 600px) {
+    .our-courses .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .courses .course img{
+        width: 100%;
+        height: auto;
+    }
+    .courses-dis {
+        width: 100%;
+    }
+    .courses-dis h2{
+        font-size: 28px;
+    }
+    .courses-dis p{
+        font-size: 14px;
+    }
+    .courses-but a {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+     .container .courses .course{
+        width: 100%;
+    }   
+}
+@media (min-width: 600px)and(max-width: 700px)  {
+    .container .courses .course img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 400px) {
+    .container .courses .course img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 360px) {
+    .container .courses .course img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 320px) {
+    .container .courses .course img{
+        width: 100%;
+        height: auto;
+    }
+}
+.testimonials .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.testimonials-dis {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 40px) / 2);
+    gap: 10px;
+    line-height: 150%;
+
+}
+
+.testimonials-dis p {
+    color: var(#59595A);
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.testimonials-but {
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    justify-content: end;
+    align-items: last baseline;
+}
+
+.testimonials-but a {
+    border-radius: 8px;
+    border: 1px solid var(#F1F1F3);
+    background: var(#FCFCFD);
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.testimonials-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    gap: 30px;
+    width: 100%;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc((100% - 40px) / 2);
+    padding: 30px 50px;
+    background-color: #FFF;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.testimonial-card p {
+    background-color: #FFF;
+    color: #4C4C4D;
+}
+
+.testimonial-card-dis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF;
+    gap: 40px;
+    border-top: 1px solid #F1F1F3;
+    padding: 15px 0px;
+}
+
+.testimonial-card-dis .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #FFF;
+}
+
+.testimonial-card-dis .row span {
+    background-color: #FFF;
+    color: #333;
+    font-weight: 600;
+}
+
+.testimonial-card-dis span:last-of-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+}
+
+.testimonial-card-dis a {
+    border-radius: 8px;
+    border: 1px solid var(--white-95, #F1F1F3);
+    background: var(--white-97, #F7F7F8);
+    display: flex;
+    padding: 18px 24px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .testimonials .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .testimonials-dis {
+        width: 100%;
+    }
+    .testimonials-dis h2{
+        font-size: 28px;
+    }
+    .testimonials-dis p{
+        font-size: 14px;
+    }
+    .testimonials-but a {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+    .container .testimonials-cards .testimonial-card{
+        width: 100%;
+    }
+
+}
+.our-pricing {
+    width: 100%;
+    padding: 50px 0px;
+}
+
+.our-pricing .container .row {
+    padding-bottom: 50px;
+}
+
+.our-pricing-dis {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: calc((100% - 40px) / 2);
+}
+
+.our-pricing-but {
+    display: flex;
+    flex-direction: row;
+    place-self: end;
+}
+
+.our-pricing-but a:first-of-type {
+    background-color: #FF9500;
+    padding: 14px 30px;
+    border-radius: 10px;
+}
+
+.our-pricing-but a:last-of-type {
+    background-color: #FFF;
+    padding: 14px 30px;
+    border-radius: 10px;
+}
+
+.plane {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.plane * {
+    background-color: #FFF;
+}
+
+.free-plane {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc((100% - 40px) / 2);
+    text-align: center;
+    gap: 30px;
+}
+
+.free-plane a {
+    background-color: #FF9500;
+    padding: 20px 24px;
+    border-radius: 10px;
+}
+
+.free-plane h3 {
+    display: flex;
+    padding: 12px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid var(--orange-90, #FFEACC);
+    background: var(--orange-97, #FFF9F0);
+}
+
+.sub {
+    padding: 10px 0px;
+}
+
+.sub span:first-of-type {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 73%;
+    /* 58.4px */
+}
+
+.sub span:last-of-type {
+    font-family: Be Vietnam Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.available-features {
+    padding: 0.8em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.available-features h3 {
+    text-align: center;
+    font-family: Be Vietnam Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 30px */
+    background-color: #F7F7F8;
+    border: none;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    border: 1px solid var(--white-95, #F1F1F3);
+    padding: 12px;
+    justify-content: center;
+}
+
+.feature span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+@media (max-width: 600px) {
+    .our-pricing .container .row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .our-pricing-dis {
+        width: 100%;
+    }
+    .our-pricing-dis h2{
+        font-size: 28px;
+    }
+    .our-pricing-dis p{
+        font-size: 14px;
+    }
+    .our-pricing-but a {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+    .container .plane .free-plane{
+        width: 100%;
+    }
+    .container .plane .free-plane .available-features{
+        width: 100%;
+    }
+}
+footer {
+    padding: 100px 0px;
+    background-color: #FFF;
+}
+
+footer * {
+    background-color: #FFF;
+}
+
+.footer-logo {
+    width: 54px;
+    height: 54px;
+}
+
+.start-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-dis {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.end-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: calc((100% - 30px) / 2);
+}
+
+.end-footer nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 150%;
+    align-self: flex-start;
+}
+
+.end-footer nav a:first-of-type {
+    color: var(--Grey-15, #262626);
+    font-family: Be Vietnam Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+@media (max-width: 600px) {
+    footer .container .row .start-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    footer .container .row .end-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .our-pricing-dis {
+        width: 100%;
+    }
+    .our-pricing-dis h2{
+        font-size: 28px;
+    }
+    .our-pricing-dis p{
+        font-size: 14px;
+    }
+    .our-pricing-but a {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+    .container .plane .free-plane{
+        width: 100%;
+    }
+    .container .plane .free-plane .available-features{
+        width: 100%;
+    }
+}
